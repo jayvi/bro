@@ -12,31 +12,33 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/vendors.css">
   <link rel="stylesheet" href="css/main.css">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-  <title>BDoge</title>
+  <title>GDoge</title>
   <style>
     body {
       background-image: url(./band5_noise.gif);
@@ -44,9 +46,10 @@
       background-position: left top
     }
 
-	.japanf{
-				font-family: 'japanregular' !important;
-							}
+    .japanf {
+      font-family: 'japanregular' !important;
+    }
+
     .progress {
       margin-bottom: 5px;
       text-align: center;
@@ -75,7 +78,7 @@
       transition: all .3s ease;
       letter-spacing: .025em;
       color: inherit;
-      border: 1px solid #bc2329;
+      border: 1px solid #e84200;
       border-radius: 3px;
       outline: 0;
       background: rgba(33, 16, 118, .75);
@@ -83,12 +86,15 @@
         0 1px 3px rgba(33, 16, 118, .1);
       box-shadow: 0 4px 6px rgba(33, 16, 118, .11), 0 1px 3px rgba(33, 16, 118, .1);
     }
-    .nav__info__item a, .nav__info__item p {
-    display: block;
-    font-size: 1.125rem;
-    padding: 0px 5px;
-    display: inline;
-}
+
+    .nav__info__item a,
+    .nav__info__item p {
+      display: block;
+      font-size: 1.125rem;
+      padding: 0px 5px;
+      display: inline;
+    }
+
     .progress__reset:focus,
     .progress__reset:hover {
       background: rgba(189, 106, 255, .8);
@@ -151,9 +157,9 @@
 
     .checklist__title-border {
       display: block;
-      width: 350px;
+      width: 100%;
       margin-top: 8px;
-      border-bottom: 2px solid #bb2026;
+      border-bottom: 2px solid #e84200;
       -webkit-box-shadow: 0 15px 15px -15px rgba(33, 16, 118, .5);
       box-shadow: 0 15px 15px -15px rgba(33, 16, 118, .5);
     }
@@ -189,7 +195,7 @@
       cursor: pointer;
       -webkit-transition: background 150ms ease;
       transition: background 150ms ease;
-      border: 2px solid #bc2329;
+      border: 2px solid #e84200;
       border-radius: 3px;
     }
 
@@ -223,7 +229,7 @@
       -webkit-transition: color 250ms ease;
       transition: color 250ms ease;
       vertical-align: top;
-      color:white !important;
+      color: white !important;
     }
 
     .checklist-item__title:focus,
@@ -239,7 +245,7 @@
       -webkit-animation: wiggle .4s ease;
       animation: wiggle .4s ease;
       border-color: transparent;
-      background: #bc2329;
+      background: #e84200;
     }
 
     input[type=checkbox]:checked~.checkbox:after {
@@ -337,7 +343,7 @@
       border: 0;
       outline: 0;
       background: 0 0;
-      color:white;
+      color: white;
     }
 
     .line {
@@ -350,7 +356,7 @@
       -webkit-transform-origin: center center;
       transform-origin: center center;
       outline: 1px solid transparent;
-      background: #bc2329;
+      background: #e84200;
     }
 
     .line:after {
@@ -365,7 +371,7 @@
       -webkit-transform-origin: center center;
       transform-origin: center center;
       outline: 1px solid transparent;
-      background: #bc2329;
+      background: #e84200;
     }
 
     .closed.line {
@@ -526,7 +532,7 @@
   </style>
 </head>
 
-<body class="preloader-visible" data-barba="wrapper">
+<body class="preloader-visible" data-gdoge="wrapper">
 
 
   <!-- preloader start -->
@@ -551,8 +557,8 @@
   <!-- cursor end -->
 
 
-  <!-- barba container start -->
-  <div class="barba-container" data-barba="container">
+  <!-- gdoge container start -->
+  <div class="gdoge-container" data-gdoge="container">
 
     <!-- to-top-button start -->
     <div data-cursor class="backButton js-backButton">
@@ -572,11 +578,11 @@
         <!-- header__bar start -->
         <div class="header__bar">
           <div class="header__logo js-header-logo">
-            <a data-barba href="">
+            <a data-gdoge href="">
               <img class="header__logo__light js-lazy" data-srcset="img/bdlogo_2.png 1x, img/bdlogo_2.png 2x"
                 data-src="img/bdlogo_2.png" alt="Logo" style="width: 250px;">
             </a>
-            <a data-barba href="">
+            <a data-gdoge href="">
               <img class="header__logo__dark js-lazy" data-srcset="img/bdlogo_2.png 1x, img/bdlogo_2.png 2x"
                 data-src="img/bdlogo_2.png" alt="Logo">
             </a>
@@ -612,33 +618,33 @@
                   <div class="navList__wrap">
                     <ul class="navList js-navList">
                       <li>
-                        <a data-barba href="javascript:void(0)">
+                        <a data-gdoge href="/">
                           Home
                         </a>
                       </li>
                       <li>
-                        <a data-barba href="javascript:void(0)">
+                        <a data-gdoge href="#tokenomics">
                           Tokenomics
                         </a>
                       </li>
                       <li>
-                        <a data-barba href="javascript:void(0)">
+                        <a data-gdoge href="#howtobuy">
                           How to buy
                         </a>
                       </li>
                       <li>
-                        <a class="active" data-barba href="javascript:void(0)">
+                        <a class="active" data-gdoge href="#roadmap">
                           Roadmap
                         </a>
                       </li>
                       <li>
-                        <a data-barba href="javascript:void(0)">
+                        <a data-gdoge href="javascript:void(0)">
                           Buy Now
                         </a>
                       </li>
-                      
 
-                      </ul>
+
+                    </ul>
 
                   </div>
                 </div>
@@ -647,12 +653,12 @@
                   <div class="nav__info">
                     <div class="nav__info__item js-navInfo-item">
                       <h5 class="text-sm tracking-none fw-500">
-                        -  -
+                        - -
                       </h5>
 
                       <div class="nav__info__content text-lg text-white mt-16">
                         <p>
-                          &copy; 2021 BDOGE 
+                          &copy; 2021 <span class="japanf">GDOGE</span>
                         </p>
                       </div>
                     </div>
@@ -666,13 +672,13 @@
                         <a href="#">BSC Address</a>
                         <a href="#">Burn Proof</a>
                         <a href="#">Ownership</a>
-                        
+
                       </div>
                     </div>
 
                     <div class="nav__info__item js-navInfo-item">
                       <h5 class="text-sm tracking-none fw-500">
-                        Contact Us
+                        Follow Us
                       </h5>
 
                       <div class="nav__info__content text-lg text-white mt-16">
@@ -709,7 +715,7 @@
               <div class="masthead__content">
                 <div data-split="lines" data-split-page-reveal>
                   <p class="masthead__subtitle uppercase text-sm tracking-md text-light mb-24 md:mb-16 js-subtitle">
-                    Design Inspiration
+
                   </p>
                 </div>
 
@@ -723,7 +729,6 @@
 
                 <div data-split="lines" data-split-page-reveal>
                   <p class="masthead__text text-light mt-40 md:mt-20 js-text">
-                    Really?! Yep, come see for yourself.
 
 
                   </p>
@@ -793,7 +798,7 @@
                 <div class="col-md-6">
                   <div class="">
                     <h2 class="number -xs -left fw-300 text-accent js-counter-num">
-                      $0.00000480827
+                      $0.0007480
                     </h2>
                     <h3 class="text-xl fw-500 text-white mt-32">
                       PRICE
@@ -807,7 +812,7 @@
                 <div class="col-md-6">
                   <div class="">
                     <h2 class="number -xs -left fw-300 text-accent js-counter-num">
-                      7590
+                      update coming soon
                     </h2>
                     <h3 class="text-xl fw-500 text-white mt-32">
                       HOLDERS
@@ -835,7 +840,7 @@
                 <div class="col-md-6">
                   <div class="">
                     <h2 class="number -xs -left fw-300 text-accent js-counter-num">
-                      $2,050,079
+                      update coming soon
                     </h2>
                     <h3 class="text-xl fw-500 text-white mt-32">
                       MARKET CAP </h3>
@@ -847,7 +852,7 @@
                 <div class="col-md-6">
                   <div class="">
                     <h2 class="number -xs -left fw-300 text-accent js-counter-num">
-                      57.473%
+                      55%
                     </h2>
                     <h3 class="text-xl fw-500 text-white mt-32">
                       BURNED </h3>
@@ -859,7 +864,7 @@
                 <div class="col-md-6">
                   <div class="">
                     <h2 class="number -xs -left fw-300 text-accent js-counter-num">
-                      425,262,968,819
+                      update coming soon
                     </h2>
                     <h3 class="text-xl fw-500 text-white mt-32">
                       CIRCULATION </h3>
@@ -884,7 +889,7 @@
 
 
       <!-- section start -->
-      <section class="layout-pt-md layout-pb-md">
+      <section id="tokenomics" class="layout-pt-md layout-pb-md">
         <!-- container start -->
         <div class="container">
           <!-- row start -->
@@ -896,7 +901,7 @@
                   Tokenomics
                 </p>
                 <h2 class="sectionHeading__title leading-sm text-white">
-                  SMART BURN SYSTEM!
+                  GDOGE PROTOCOL
                 </h2>
                 <div id="loader-container">
 
@@ -942,16 +947,14 @@
                   </div>
 
                   <p class="text-white mt-32">
-                    BOGE is a deflationary cryptocurrency. Every time a transaction takes place with BOGE, 2% of that
-                    transaction is distributed and removed (i.e. "burned")
-                    from the total supply. This increases the scarcity of every BOGE coin in circulation. What this
-                    means is that every time BOGE is used,
-                    the value of the remaining BOGE tokens in circulation is increased by simultaneously decreasing the
-                    supply (deflation), while also distributing BOGE
-                    to everyone using the token. As a result of this, every single BOGE holder has an incentive to
-                    spread the use of BOGE as much as possible.
-                    As more transactions take place on the network, the individual net-worth of all who own a piece of
-                    the network increases as well.
+                    Every transaction is taxed 5%: 2% is distributed to holders and 3% is locked in liquidity forever.
+
+                    55% of the 1 trillion total supply was burned at launch.
+
+                    With these unique features, the scarcity of GDOGE coins increases every transaction.
+
+                    The ownership of the contract (hyperlink) and LPs (hyperlink) were burned.
+
 
                   </p>
 
@@ -1018,15 +1021,10 @@
                         </div>
                       </div>
                       <p class="serviceCard__text text-light mt-12">
-                        Holders automatically receive 3% of all transactions without risk of impermanent loss or need to
-                        pay gas fees. No keys to provide = unruggable. Just hold and watch it grow.
+                        <b>Automatic, cheap and safe;</b> Holders automatically receive 2% of all transactions without
+                        paying gas fees, risk of impermanent loss and providing token spending approval.
                       </p>
-                      <div class="mt-16">
-                        <a data-barba href="#" class="button -icon text-white">
-                          Know More
-                          <i class="icon size-xs str-width-md" data-feather="arrow-right"></i>
-                        </a>
-                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -1036,60 +1034,110 @@
                     <div class="serviceCard__content">
                       <div class="d-flex align-items-center ml-minus-4">
                         <div class="">
+
                           <div class="cell">
 
-
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.1 50.8"
-                              class="svg-icon svg-icon--radiation-3">
+                              class="svg-icon svg-icon--together-2">
                               <style>
-                                .svg-icon--radiation-3 circle {
-                                  transform-origin: 50% 50%;
-                                  stroke-dasharray: 3;
+                                .svg-icon--together-2 {
+                                  animation: svg-icon--together-2__spin-animation 2s linear infinite;
                                 }
 
-                                .svg-icon--radiation-3 circle:nth-of-type(1) {
-                                  animation: svg-icon--radiation-3__spin-animation infinite linear 8s forwards;
+                                .svg-icon--together-2 circle:nth-of-type(1) {
+                                  animation: svg-icon--together-2__circle-1-animation 2s linear infinite alternate;
                                 }
 
-                                .svg-icon--radiation-3 circle:nth-of-type(2) {
-                                  animation: svg-icon--radiation-3__spin-animation reverse infinite linear 8s forwards;
+                                .svg-icon--together-2 circle:nth-of-type(2) {
+                                  animation: svg-icon--together-2__circle-2-animation 2s linear infinite alternate;
                                 }
 
-                                @keyframes svg-icon--radiation-3__spin-animation {
-                                  from {
-                                    transform: rotate(0deg);
-                                  }
+                                .svg-icon--together-2 circle:nth-of-type(3) {
+                                  animation: svg-icon--together-2__circle-3-animation 2s linear infinite alternate;
+                                }
 
+                                .svg-icon--together-2 circle:nth-of-type(4) {
+                                  animation: svg-icon--together-2__circle-4-animation 2s linear infinite alternate;
+                                }
+
+                                @keyframes svg-icon--together-2__spin-animation {
                                   to {
                                     transform: rotate(360deg);
                                   }
                                 }
+
+                                @keyframes svg-icon--together-2__circle-1-animation {
+
+                                  0%,
+                                  30% {
+                                    transform: translate(18%, 16.5%);
+                                  }
+
+                                  80%,
+                                  100% {
+                                    transform: translate(0, 0);
+                                  }
+                                }
+
+                                @keyframes svg-icon--together-2__circle-2-animation {
+
+                                  0%,
+                                  20% {
+                                    transform: translate(-18%, 16.5%);
+                                  }
+
+                                  80%,
+                                  100% {
+                                    transform: translate(0, 0);
+                                  }
+                                }
+
+                                @keyframes svg-icon--together-2__circle-3-animation {
+
+                                  0%,
+                                  20% {
+                                    transform: translate(18%, -17%)
+                                  }
+
+                                  80%,
+                                  100% {
+                                    transform: translate(0, 0);
+                                  }
+                                }
+
+                                @keyframes svg-icon--together-2__circle-4-animation {
+
+                                  0%,
+                                  20% {
+                                    transform: translate(-18%, -17%);
+                                  }
+
+                                  80%,
+                                  100% {
+                                    transform: translate(0, 0);
+                                  }
+                                }
                               </style>
 
-                              <path
-                                d="M23.2 25.6c0 1.1.9 1.9 1.9 1.9 1.1 0 1.9-.9 1.9-1.9 0-1.1-.9-1.9-1.9-1.9-1.1-.1-1.9.8-1.9 1.9"
-                                stroke="none" fill="currentColor" />
-                              <circle fill="none" stroke="#ffffff" cx="25.1" cy="25.6" r="15.9" />
-                              <circle fill="none" stroke="#ffffff" cx="25.1" cy="25.6" r="11.8" />
-                              <path fill="none" stroke="#ffffff"
-                                d="M17.3 25.6c0 4.3 3.5 7.7 7.7 7.7 4.3 0 7.7-3.5 7.7-7.7 0-4.3-3.5-7.7-7.7-7.7-4.2-.1-7.7 3.4-7.7 7.7" />
+                              <circle fill="none" stroke="#ffffff" cx="16" cy="17.1" r="12.3" />
+                              <circle fill="none" stroke="#ffffff" cx="34.1" cy="17.1" r="12.3" />
+                              <circle fill="none" stroke="#ffffff" cx="16" cy="34" r="12.3" />
+                              <circle fill="none" stroke="#ffffff" cx="34.1" cy="34" r="12.3" />
                             </svg>
                             <div class="cell__name serviceCard__title text-2xl fw-500 text-white "> HYPER-DEFLATIONARY
                             </div>
                           </div>
+
+
+
                         </div>
                       </div>
 
                       <p class="serviceCard__text text-light mt-12">
-                        65% was burned at launch, it receives the major part of the 3% tax and increases exponentially
-                        with every transaction automatically.
+                        <b>Automatic and exponential burn process;</b> 55% to the total supply was burned at launch and
+                        it receives the major part of the 2% tax burning more coins every transaction.
                       </p>
-                      <div class="mt-16">
-                        <a data-barba href="#" class="button -icon text-white">
-                          Know More
-                          <i class="icon size-xs str-width-md" data-feather="arrow-right"></i>
-                        </a>
-                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -1099,50 +1147,70 @@
                     <div class="serviceCard__content">
                       <div class="d-flex align-items-center ml-minus-4">
                         <div class="">
+
                           <div class="cell">
+
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.1 50.8"
-                              class="svg-icon svg-icon--desire">
+                              class="svg-icon svg-icon--growth">
                               <style>
-                                .svg-icon--desire circle:nth-of-type(2) {
-                                  animation: svg-icon--desire__dot-animation infinite ease 6s 1s;
+                                .svg-icon--growth path:nth-of-type(1) {
+                                  stroke-dasharray: 60px;
+                                  stroke-dashoffset: 60px;
+                                  animation: svg-icon--growth__line-animation infinite cubic-bezier(0, .67, .43, 1) 5s;
                                 }
 
-                                @keyframes svg-icon--desire__dot-animation {
+                                .svg-icon--growth path:nth-of-type(2) {
+                                  transform: translate(-48px, 36px);
+                                  animation: svg-icon--growth__tip-animation infinite cubic-bezier(0, .67, .43, 1) 5s;
+                                }
 
-                                  0%,
-                                  20%,
-                                  80%,
-                                  100% {
-                                    transform: translateX(0);
+                                @keyframes svg-icon--growth__line-animation {
+
+                                  50%,
+                                  80% {
+                                    opacity: 1;
+                                    stroke-dashoffset: 0;
                                   }
 
-                                  40%,
-                                  60% {
-                                    transform: translateX(-25px);
+                                  90%,
+                                  100% {
+                                    opacity: 0;
+                                    stroke-dashoffset: 0;
+                                  }
+                                }
+
+                                @keyframes svg-icon--growth__tip-animation {
+
+                                  50%,
+                                  80% {
+                                    opacity: 1;
+                                    transform: translate(0, 0);
+                                  }
+
+                                  90%,
+                                  100% {
+                                    opacity: 0;
+                                    transform: translate(0, 0);
                                   }
                                 }
                               </style>
 
-                              <path stroke="#ffffff" fill="none" d="M.4 5.6h24.5v39.5H.4z" />
-                              <circle stroke="#ffffff" fill="none" cx="12.7" cy="25.7" r="4.5" />
-                              <circle stroke="none" fill="#ffffff" cx="37.7" cy="25.7" r="4.1" />
+                              <path fill="none" stroke="#ffffff" d="M.9 44.169l46.9-35.1" />
+                              <path stroke="none" fill="#ffffff" d="M46.3 7.169h3.8l-1 3.7-2.8-3.7z" />
                             </svg>
                             <div class="cell__name serviceCard__title text-2xl fw-500 text-white "> EVER-RISING PRICE
                               FLOOR</div>
                           </div>
+
+
                         </div>
                       </div>
 
                       <p class="serviceCard__text text-light mt-12">
-                        6% of all transactions are locked forever in liquidity, essentially burning LEM with each
-                        transaction and creating a rising price floor over time.
+                        <b>Automatically locked forever liquidity;</b> 3% of all transactions are locked forever in
+                        liquidity, essentially burning more GDOGE coins with each transaction and creating a rising
+                        price floor over time.
                       </p>
-                      <div class="mt-16">
-                        <a data-barba href="#" class="button -icon text-white">
-                          Know More
-                          <i class="icon size-xs str-width-md" data-feather="arrow-right"></i>
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -1223,22 +1291,18 @@
                               <path fill="none" stroke="#ffffff"
                                 d="M19.1 40.9L7.8 29.7c-2-2.2-2.8-3.6-2.8-3.6-1-1.7-1.6-3.6-1.6-5.7 0-6 4.8-10.9 10.8-10.9 1.3 0 2.5.2 3.7.6 0 0 2.4.8 5.6 3.9M17.8 32.2l9.5 9.4M21.4 28.6l12.7 12.7M25 25l9.5 9.5" />
                             </svg>
-                            <div class="cell__name serviceCard__title text-2xl fw-500 text-white "> 100% COMMUNITY
-                              DRIVEN</div>
+                            <div class="cell__name serviceCard__title text-2xl fw-500 text-white "> UN-RUGGABLE & 100%
+                              COMMUNITY OWNED</div>
                           </div>
                         </div>
                       </div>
 
                       <p class="serviceCard__text text-light mt-12">
-                        Stealth launch. Ownership of the contract renounced = unruggable + no minting possible. No team
-                        tokens. The community is fully in charge.
+                        <b>Safe and fair; </b>GDOGE coin was stealth launched with no team token allocation. The
+                        ownership of the contract was sent to the burn address, meaning it is un-ruggable and no coin
+                        minting is possible. The community is fully in charge.
                       </p>
-                      <div class="mt-16">
-                        <a data-barba href="#" class="button -icon text-white">
-                          Know More
-                          <i class="icon size-xs str-width-md" data-feather="arrow-right"></i>
-                        </a>
-                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -1330,414 +1394,79 @@
         </div>
         <!-- container end -->
       </section>
-      <section class="layout-pt-lg layout-pb-lg">
+
+      <section id="howtobuy" class="layout-pt-xl layout-pb-lg">
         <!-- container start -->
         <div data-anim-wrap="" class="container animated">
-
           <!-- row start -->
-          <div class="row">
-            <div class="col-xl-6 col-lg-8 col-md-10">
-              <div data-anim-child="slide-up" class="sectionHeading -md is-in-view">
-                <p class="sectionHeading__subtitle text-white">
-                  the guide to success
+          <div class="row justify-content-center text-center">
+            <div class="col-xl-11 col-lg-10">
+              <div class="sectionHeading -sm">
+                <p class="sectionHeading__subtitle">
+
                 </p>
-                <h2 class="sectionHeading__title text-white">
+                <h2 class="sectionHeading__title text-white leading-lg mt-32">
                   How to Buy?
                 </h2>
+                <a href="javascript:void(0)" data-gdoge="" class="button -underline fw-400 text-lg text-white mt-40">
+                  choose your wallet
+                </a>
               </div>
             </div>
           </div>
           <!-- row end -->
-
-
-          <!-- row start -->
-          <div class="row x-gap-60 y-gap-60 layout-pt-md">
-
-            <div class="col-lg-4 col-sm-6">
-              <div data-anim-child="slide-up delay-3" class="award is-in-view">
-                <div class="award__content">
-                  <p class="text-lg text-accent number fw-500">
-                    1
-                  </p>
-                  <h3 class="award__title text-2xl fw-500 mt-16 text-white">
-                    DOWNLOAD METAMASK
-                  </h3>
-                  <p class="text-white award__text mt-8">
-                    <a href=""> Metamask </a>is a crypto wallet that works with any ERC20 tokens. BOGE is an ERC20
-                    token.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-              <div data-anim-child="slide-up delay-4" class="award is-in-view">
-                <div class="award__content">
-                  <p class="text-lg text-accent number fw-500">
-                    2
-                  </p>
-                  <h3 class="award__title text-2xl fw-500 mt-16 text-white">
-                    BUY BSC (Binance Smart Chain)
-                  </h3>
-                  <p class="text-white award__text mt-8">
-                    Use an exchange to buy binance smart chain.
-                    <br />
-                    <i class="text-white">Some exchanges are Binance, Binance US, Kraken, and Coinbase.</i>
-
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-              <div data-anim-child="slide-up delay-5" class="award is-in-view">
-                <div class="award__content">
-                  <p class="text-lg text-accent number fw-500">
-                    3
-                  </p>
-                  <h3 class="award__title text-2xl fw-500 mt-16 text-white">
-                    TRANSFER BNB TO METAMASK OR A DAPP SUPPORTED CRYPTO WALLET.
-                  </h3>
-                  <p class="text-white award__text mt-8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt eligendi aut expedita quos
-                    repudiandae alias, velit, veniam error doloribus repellendus officia quod molestiae suscipit
-                    inventore, sit rerum. Atque, quae provident?
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-              <div data-anim-child="slide-up delay-6" class="award is-in-view">
-                <div class="award__content">
-                  <p class="text-lg text-accent number fw-500">
-                    4
-                  </p>
-                  <h3 class="award__title text-2xl fw-500 mt-16 text-white">
-                    The Shorty Awards
-                  </h3>
-                  <p class="text-white award__text mt-8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt eligendi aut expedita quos
-                    repudiandae alias, velit, veniam error doloribus repellendus officia quod molestiae suscipit
-                    inventore, sit rerum. Atque, quae provident?
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-              <div data-anim-child="slide-up delay-7" class="award is-in-view">
-                <div class="award__content">
-                  <p class="text-lg text-accent number fw-500">
-                    5
-                  </p>
-                  <h3 class="award__title text-2xl fw-500 mt-16 text-white">
-                    Point Five
-                  </h3>
-                  <p class="text-white award__text mt-8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt eligendi aut expedita quos
-                    repudiandae alias, velit, veniam error doloribus repellendus officia quod molestiae suscipit
-                    inventore, sit rerum. Atque, quae provident? </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-              <div data-anim-child="slide-up delay-8" class="award is-in-view">
-                <div class="award__content">
-                  <p class="text-lg text-accent number fw-500">
-                    6
-                  </p>
-                  <h3 class="award__title text-2xl fw-500 mt-16 text-white">
-                    Point Six
-                  </h3>
-                  <p class="text-white award__text mt-8">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt eligendi aut expedita quos
-                    repudiandae alias, velit, veniam error doloribus repellendus officia quod molestiae suscipit
-                    inventore, sit rerum. Atque, quae provident? </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <!-- row end -->
-
         </div>
         <!-- container end -->
       </section>
-      <section class="layout-pt-lg layout-pb-md">
+      <section class=" layout-pb-lg">
         <!-- container start -->
         <div class="container">
           <!-- row start -->
-          <div class="row justify-content-between align-items-end">
-            <div class="col-lg-6">
-              <div class="sectionHeading -md">
-                <p class="sectionHeading__subtitle -light">how to</p>
-                <h2 class="sectionHeading__title text-white">Metamask Buy</h2>
+          <div class="row x-gap-40 y-gap-40">
+
+            <div class="col-lg-6 col-md-6">
+              <div data-anim="slide-up delay-3" class="blogCard -type-2 -hover shadow-light rounded-4 is-in-view">
+                <a class="blogCard__img" data-gdoge="" href="javascript:void(0)">
+                  <div class="bg-image js-lazy loaded" data-ll-status="loaded" style="background-image: url();"></div>
+                </a>
+
+                <div class="blogCard__content px-40 py-40 lg:px-32 lg:py-32 md:px-40 md:py-40">
+
+                  <h4 class="blogCard__title text-2xl text-center leading-md fw-500 text-white mt-48">
+                    <a data-gdoge="" href="/metamask">
+                      <img style="width: 100%;" src="./img/metamask.png" />
+                    </a>
+                  </h4>
+
+                </div>
               </div>
             </div>
+
+            <div class="col-lg-6 col-md-6">
+              <div data-anim="slide-up delay-4" class="blogCard -type-2 -hover shadow-light rounded-4 is-in-view">
+                <a class="blogCard__img" data-gdoge="" href="javascript:void(0)">
+                  <div class="bg-image js-lazy loaded" data-ll-status="loaded" style="background-image: url();"></div>
+                </a>
+
+                <div class="blogCard__content px-40 py-40 lg:px-32 lg:py-32 md:px-40 md:py-40">
+
+
+                  <h4 class="blogCard__title text-2xl text-center leading-md fw-500 text-white mt-48">
+                    <a data-gdoge="" href="/trustwallet">
+                      <img style="width: 100%;" src="./img/trustwallet.png" />
+
+                    </a>
+                  </h4>
+
+
+                </div>
+              </div>
+            </div>
+
 
 
           </div>
           <!-- row end -->
-        </div>
-        <!-- container end -->
-
-        <!-- container start -->
-        <div class="container-wide">
-          <div class="layout-pt-md js-section-slider" data-slider-col="base-3 lg-3 md-2 sm-1" data-gap="40"
-            data-pagination>
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide slider-slide">
-                <div data-anim="slide-up delay-1" class="portfolioCard -type-2 -hover">
-                  <div class="portfolioCard__img">
-                    <div class="portfolioCard__img__inner">
-                      <div class="ratio ratio-2:3 bg-image swiper-lazy" style="    background-size: 100%;"
-                        data-background="./img/image1.png">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="portfolioCard__content">
-                    <a href="#" class="portfolioCard__category text-light">
-                      Install the MetaMask
-                    </a>
-
-                    <h3 class="portfolioCard__title fw-500 text-2xl mt-4 text-white">
-                      <a href="">Download</a>
-
-                    </h3>
-                  </div>
-
-                  <a class="portfolioCard__link" data-barba href=""></a>
-                </div>
-              </div>
-
-              <div class="swiper-slide slider-slide">
-                <div data-anim="slide-up delay-2" class="portfolioCard -type-2 -hover">
-                  <div class="portfolioCard__img">
-                    <div class="portfolioCard__img__inner">
-                      <div class="ratio ratio-2:3 bg-image swiper-lazy" style="    background-size: 100%;"
-                        data-background="./img/image2.png">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="portfolioCard__content">
-                    <a href="#" class="portfolioCard__category text-light">
-                      Setup BSC Network
-                    </a>
-
-                    <h3 class="portfolioCard__title fw-500 text-2xl mt-4 text-white text-center">
-
-                    </h3>
-                  </div>
-
-                  <a class="portfolioCard__link" data-barba href=""></a>
-                </div>
-              </div>
-
-              <div class="swiper-slide slider-slide">
-                <div data-anim="slide-up delay-3" class="portfolioCard -type-2 -hover">
-                  <div class="portfolioCard__img">
-                    <div class="portfolioCard__img__inner">
-                      <div class="ratio ratio-2:3 bg-image swiper-lazy" style="    background-size: 100%;"
-                        data-background="./img/image3.png">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="portfolioCard__content">
-                    <a href="#" class="portfolioCard__category text-light">
-                      Instructions
-                    </a>
-
-                    <h3 class="portfolioCard__title fw-500 text-2xl mt-4 text-white">
-                      Network Name: BSC Mainnet <br />
-                      New RPC URL: https://bsc-dataseed1.binance.org/ or <br> https://bsc-dataseed2.binance.org/
-                      <br />
-                      ChainID: 56, or 0x38 if 56 doesn’t work
-                      <br />
-                      Symbol: BNB
-                      <br />
-                      Block Explorer URL: https://bscscan.com/
-                    </h3>
-                  </div>
-
-                  <a class="portfolioCard__link" data-barba href=""></a>
-                </div>
-              </div>
-
-              <div class="swiper-slide slider-slide">
-                <div data-anim="slide-up delay-4" class="portfolioCard -type-2 -hover">
-                  <div class="portfolioCard__img">
-                    <div class="portfolioCard__img__inner">
-                      <div class="ratio ratio-2:3 bg-image swiper-lazy" style="    background-size: 100%;"
-                        data-background="./img/image4.png">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="portfolioCard__content">
-                    <a href="#" class="portfolioCard__category text-light">
-                      Instructions
-                    </a>
-
-                    <h3 class="portfolioCard__title fw-500 text-2xl mt-4 text-white">
-                      Instructions Text
-                    </h3>
-                  </div>
-
-                  <a class="portfolioCard__link" data-barba href=""></a>
-                </div>
-              </div>
-
-              <div class="swiper-slide slider-slide">
-                <div data-anim="slide-up delay-5" class="portfolioCard -type-2 -hover">
-                  <div class="portfolioCard__img">
-                    <div class="portfolioCard__img__inner">
-                      <div class="ratio ratio-2:3 bg-image swiper-lazy" style="    background-size: 100%;"
-                        data-background="./img/image5.png">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="portfolioCard__content">
-                    <a href="#" class="portfolioCard__category text-light">
-                      Instructions
-                    </a>
-
-                    <h3 class="portfolioCard__title fw-500 text-2xl mt-4 text-white">
-                      Instructions Text
-                    </h3>
-                  </div>
-
-                  <a class="portfolioCard__link" data-barba href=""></a>
-                </div>
-              </div>
-
-              <div class="swiper-slide slider-slide">
-                <div data-anim="slide-up delay-6" class="portfolioCard -type-2 -hover">
-                  <div class="portfolioCard__img">
-                    <div class="portfolioCard__img__inner">
-                      <div class="ratio ratio-2:3 bg-image swiper-lazy" style="    background-size: 100%;"
-                        data-background="./img/image6.png">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="portfolioCard__content">
-                    <a href="#" class="portfolioCard__category text-light">
-                      Instructions
-                    </a>
-
-                    <h3 class="portfolioCard__title fw-500 text-2xl mt-4 text-white">
-                      Instructions Text
-                    </h3>
-                  </div>
-
-                  <a class="portfolioCard__link" data-barba href=""></a>
-                </div>
-              </div>
-              <div class="swiper-slide slider-slide">
-                <div data-anim="slide-up delay-6" class="portfolioCard -type-2 -hover">
-                  <div class="portfolioCard__img">
-                    <div class="portfolioCard__img__inner">
-                      <div class="ratio ratio-2:3 bg-image swiper-lazy" style="    background-size: 100%;"
-                        data-background="./img/image7.png">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="portfolioCard__content">
-                    <a href="#" class="portfolioCard__category text-light">
-                      Instructions
-                    </a>
-
-                    <h3 class="portfolioCard__title fw-500 text-2xl mt-4 text-white">
-                      Instructions Text
-                    </h3>
-                  </div>
-
-                  <a class="portfolioCard__link" data-barba href=""></a>
-                </div>
-              </div>
-              <div class="swiper-slide slider-slide">
-                <div data-anim="slide-up delay-6" class="portfolioCard -type-2 -hover">
-                  <div class="portfolioCard__img">
-                    <div class="portfolioCard__img__inner">
-                      <div class="ratio ratio-2:3 bg-image swiper-lazy" style="    background-size: 100%;"
-                        data-background="./img/image8.png">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="portfolioCard__content">
-                    <a href="#" class="portfolioCard__category text-light">
-                      Instructions
-                    </a>
-
-                    <h3 class="portfolioCard__title fw-500 text-2xl mt-4 text-white">
-                      Instructions Text
-                    </h3>
-                  </div>
-
-                  <a class="portfolioCard__link" data-barba href=""></a>
-                </div>
-              </div>
-              <div class="swiper-slide slider-slide">
-                <div data-anim="slide-up delay-6" class="portfolioCard -type-2 -hover">
-                  <div class="portfolioCard__img">
-                    <div class="portfolioCard__img__inner">
-                      <div class="ratio ratio-2:3 bg-image swiper-lazy" style="    background-size: 100%;"
-                        data-background="./img/image9.png">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="portfolioCard__content">
-                    <a href="#" class="portfolioCard__category text-light">
-                      Development
-                    </a>
-
-                    <h3 class="portfolioCard__title fw-500 text-2xl mt-4 text-white">
-                      Summer Time
-                    </h3>
-                  </div>
-
-                  <a class="portfolioCard__link" data-barba href=""></a>
-                </div>
-              </div>
-              <div class="swiper-slide slider-slide">
-                <div data-anim="slide-up delay-6" class="portfolioCard -type-2 -hover">
-                  <div class="portfolioCard__img">
-                    <div class="portfolioCard__img__inner">
-                      <div class="ratio ratio-2:3 bg-image swiper-lazy" style="    background-size: 100%;"
-                        data-background="./img/image10.png">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="portfolioCard__content">
-                    <a href="#" class="portfolioCard__category text-light">
-                      Instructions
-                    </a>
-
-                    <h3 class="portfolioCard__title fw-500 text-2xl mt-4 text-white">
-                      Instructions Text
-                    </h3>
-                  </div>
-
-                  <a class="portfolioCard__link" data-barba href=""></a>
-                </div>
-              </div>
-
-
-            </div>
-
-            <div class="pagination -light js-pagination pb-4 layout-pt-sm"></div>
-          </div>
         </div>
         <!-- container end -->
       </section>
@@ -1745,7 +1474,7 @@
 
 
       <!-- section start -->
-      <section class="layout-pt-md layout-pb-md">
+      <section id="roadmap" class="layout-pt-md layout-pb-md">
         <!-- container start -->
         <div class="container-fluid px-0 text-center">
           <!-- row start -->
@@ -1755,7 +1484,7 @@
               <div data-anim-child="img-right cover-dark-1 delay-2">
                 <div class="ratio ratio-1:1" data-parallax="0.7">
                   <div data-parallax-target class="bg-image js-lazy" style="background-size: 50%;"
-                    data-bg="./img/yakuza2.png"></div>
+                    data-bg="./img/yakuza3.png"></div>
                 </div>
               </div>
             </div>
@@ -1781,23 +1510,24 @@
                 <div data-anim-child="slide-up delay-12">
                   <div class="cell">
                     <div class="cell__name"> &nbsp;</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.1 50.8" class="svg-icon svg-icon--rollout-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.1 50.8"
+                      class="svg-icon svg-icon--rollout-4">
                       <style>
                         .svg-icon--rollout-4 path {
                           animation: svg-icon--rollout-4__fold-animation infinite alternate 2s ease;
                         }
-              
+
                         @keyframes svg-icon--rollout-4__fold-animation {
                           from {
                             d: path('M24.8 14.2L20.6 10.2 16.5 14.2 12.4 10.2 8.2 14.2 8.2 41 12.4 36.8 16.5 41 20.6 36.8 24.8 41 41.9 41 41.9 14.2zM12.4 10.2L12.4 36.8M16.5 14.2L16.5 41M20.6 10.2L20.6 36.8M24.8 14.2L24.8 41M28.1 18L28.1 37.2M35.1 18L35.1 37.2M31.6 18L31.6 37.2M38.8 18L38.8 37.2');
                           }
-              
+
                           to {
                             d: path('M28.8 14.2L22.6 14.2 16.5 14.2 10.4 14.2 4.2 14.2 4.2 41 10.4 41 16.5 41 22.6 41 28.8 41 45.9 41 45.9 14.2zM10.4 14.2L10.4 41M16.5 14.2L16.5 41M22.6 14.2L22.6 41M28.8 14.2L28.8 41M32.1 18L32.1 37.2M39.1 18L39.1 37.2M35.6 18L35.6 37.2M42.8 18L42.8 37.2');
                           }
                         }
                       </style>
-              
+
                       <path fill="none" stroke="#ffffff"
                         d="M24.8 14.2L20.6 10.2 16.5 14.2 12.4 10.2 8.2 14.2 8.2 41 12.4 36.8 16.5 41 20.6 36.8 24.8 41 41.9 41 41.9 14.2zM12.4 10.2L12.4 36.8M16.5 14.2L16.5 41M20.6 10.2L20.6 36.8M24.8 14.2L24.8 41M28.1 18L28.1 37.2M35.1 18L35.1 37.2M31.6 18L31.6 37.2M38.8 18L38.8 37.2" />
                     </svg>
@@ -1813,652 +1543,46 @@
       </section>
       <!-- section end -->
       <section class=" layout-pb-md">
-        
-        <div class="container" style="    display: inline-flex;">
-          <section class="checklist">
-            <h2 class="checklist__title">Q1</h2>
-            <span class="checklist__title-border"></span>
-            <span class="checklist__percentage-border"></span>
-            <ul class="checklist-container">
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Images Optimized</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-                <div class="info-container">
-                  <div class="info">
-                    <ul>
-                      <li>Compress all your images using either web processors such as <a href="http://optimizilla.com/"
-                          target="_blank" rel="noopener">Optimizilla.com</a> and <a
-                          href="https://compressor.io/compress" target="_blank" rel="noopener">Compressor.io</a>, or
-                        desktop apps such as <a target="_blank" rel="noopener"
-                          href="http://nikkhokkho.sourceforge.net/static.php?page=FileOptimizer">FileOptimizer</a> and
-                        <a target="_blank" rel="noopener" href="https://imageoptim.com/mac">ImageOptim</a>.
-                      </li>
-                      <li>Generate the exact image size for each element instead of resizing it with CSS/HTML as this
-                        can be a heavy process for the browser to perform.
-                      </li>
-                      <li>Utilize <a target="_blank" rel="noopener"
-                          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Implementing_image_sprites_in_CSS">Image
-                          Sprites</a> to save on HTTP requests and bandwidth.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Reduced Page Weight &amp; Requests</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
 
-                <div class="info-container">
-                  <div class="info">Here are some tips to keep your page weight under 2MB and 50 requests:
-                    <ul>
-                      <li>Limit 3rd party libraries &amp; scripts</li>
-                      <li>Load resources &amp; requests asynchronously</li>
-                      <li>Consider a <a target="_blank" rel="noopener"
-                          href="https://en.wikipedia.org/wiki/Content_delivery_network">CDN</a> for static assets &amp;
-                        pages
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Limited Web Font Usage</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
+        <div class="row" style="">
+          <div class="col-md-4 col-sm-4 col-xs-hidden"></div>
+          <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+            <section class="checklist ">
+              <h2 class="checklist__title"></h2>
+              <span class="checklist__title-border"></span>
+              <span class="checklist__percentage-border"></span>
+              <ul class="checklist-container">
+                <li class="checklist-item">
+                  <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                    class="checklist-item__title">Coingecko / CoinMarketCap </span>
 
-                <div class="info-container">
-                  <div class="info">Many websites are loading full sets of font glyphs and weights they are not even
-                    using. Web fonts can also present inconsistent performance due to the reliance on third party
-                    servers for heavy font files. Try to limit your pages to 2-3 web fonts
-                    or use a
-                    <a target="_blank" rel="noopener"
-                      href="https://css-tricks.com/snippets/css/system-font-stack/">System
-                      Font Stack</a> for a comfortable look to the user.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">GZIP &amp; JS/CSS Minified</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
+                </li>
+                <li class="checklist-item">
+                  <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                    class="checklist-item__title">Marketing </span>
 
-                <div class="info-container">
-                  <div class="info">GZIP is a powerful compressor for text files that can be configured in the web
-                    server. Javascript and CSS files should be combined into one file and minified when served to the
-                    user to reduce the impact of loading on the critical path. I suggest
-                    the tools <a target="_blank" rel="noopener" href="">UgilfyJS</a> for
-                    Javascript and <a target="_blank" rel="noopener" href="">CSSO</a> for
-                    CSS.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Implemented HTTP/2</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
+                </li>
+                <li class="checklist-item">
+                  <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                    class="checklist-item__title">Partnerships </span>
 
-                <div class="info-container">
-                  <div class="info">HTTP/2 is the newest HTTP protocol, has good support across browsers, and makes
-                    great improvements to load speed. <a target="_blank" rel="noopener"
-                      href="">Here</a> is a guide for
-                    enabling
-                    HTTP/2 in Nginx.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Async &amp; Defer Attributes Added</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
+                </li>
+                <li class="checklist-item">
+                  <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                    class="checklist-item__title">NFT farming </span>
 
-                <div class="info-container">
-                  <div class="info">Tell the browser when to download and execute a script file so it doesn't block any
-                    other resources. I like <a target="_blank" rel="noopener"
-                      href="">this
-                      guide</a> for showing what each of these script attributes does.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Resource Hinting Added</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
+                </li>
+                <li class="checklist-item">
+                  <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                    class="checklist-item__title">NFT marketplace </span>
 
-                <div class="info-container">
-                  <div class="info">If you're using any 3rd party assets then you will have a DNS lookup attached, both
-                    these and your own resources can block each other or be loaded out-of-order. <a target="_blank"
-                      rel="noopener" href="https://www.keycdn.com/blog/resource-hints/"> Here</a> is a guide for the
-                    various values of the link attribute "rel" that tells the browser when and how to handle these
-                    situations. <a target="_blank" rel="noopener"
-                      href="https://w3c.github.io/resource-hints/#h-resource-hints">This</a> is the W3Consortium
-                    document for Resource-Hints.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Cache Headers Set</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
+                </li>
 
-                <div class="info-container">
-                  <div class="info">Specify the [cache-control] header with a [max-age] directive in the web server to
-                    avoid having the browser set poor default versions. This will provide huge performance savings for
-                    users who see the same resources multiple times. Static assets with
-                    versioning should be cached for as long as possible.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Consider Service Workers</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
+              </ul>
 
-                <div class="info-container">
-                  <div class="info"><a target="_blank" rel="noopener"
-                      href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Service
-                      Workers</a> will give you precise control over cache and allow the creation of an offline web
-                    experience. <a target="_blank" rel="noopener"
-                      href="https://github.com/lyzadanger/pragmatist-service-worker">Here</a> are some code examples.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Run Testing</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">My favorite tools are <a target="_blank" rel="noopener"
-                      href="http://yellowlab.tools/">YellowLab.tools</a>, <a target="_blank" rel="noopener"
-                      href="http://www.webpagetest.org/">webpagetest.org</a>, and <a target="_blank" rel="noopener"
-                      href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a>.
-                    Make sure to test in 4G, 3G, and Wi-Fi network environments as well as with popular devices.
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-          </section>
-          <section class="checklist">
-            <h2 class="checklist__title">Q2</h2>
-            <span class="checklist__title-border"></span>
-            <span class="checklist__percentage-border"></span>
-            <ul class="checklist-container">
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Page-Specific Keywords Set</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-                <div class="info-container">
-                  <div class="info">While less important than it used to be, keyword targeting is still one of the most
-                    common suggestions towards improving SEO ranking.
-                    <br> Include the keyword or phrase in the:
-                    <ul>
-                      <li>URL - Make sure it's short and semantically clear</li>
-                      <li>Title Tag - Include keyword or phrase in beginning, max 70 characters</li>
-                      <li>Meta Description - Unique on every page, max 155 characters</li>
-                      <li>H1 - One per page, less important to include keyword</li>
-                    </ul>
-
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Google Analytics &amp; Google Search Console Setup</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Google Analytics can help you target users and isolate problem areas for your
-                    website. Philip Walton explains a <a target="_blank" rel="noopener"
-                      href="https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/">GA
-                      setup</a> that he uses to "reap its full benefits". Remember to connect your Search Console and
-                    Analytics! Note that Bing Webmaster Tools are more important for U.S. targeted sites.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">XML Sitemap Created &amp; Submitted</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Tools such as <a target="_blank" rel="noopener"
-                      href="https://www.xml-sitemaps.com/">XML-Sitemaps.com</a> make generating a sitemap simple. Submit
-                    a sitemap to all the search engines so they can more intelligently crawl your website.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Robots.txt Created</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">A <a target="_blank" rel="noopener"
-                      href="https://moz.com/learn/seo/robotstxt">robots.txt
-                      file</a> instructs robots which pages they can visit.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Scanned for Broken Links &amp; Crawl Problems</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Use a tool such as <a target="_blank" rel="noopener"
-                      href="http://www.screamingfrog.co.uk/seo-spider/">Screaming
-                      Frog SEO Spider</a> to crawl your website and evaluate various issues related to SEO.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Canonical Links Set</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">If applicable set a canonical link on each page using an absolute URL without query
-                    strings. You should redirect traffic from www to non-www or vice-versa, lowercase, and remove the
-                    trailing slash.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Rich Snippets &amp; Structured Data Added</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info"><a target="_blank" rel="noopener"
-                      href="https://raventools.com/site-auditor/seo-guide/schema-structured-data/">Structured
-                      data</a> allows search engines to better understand your HTML markup and generate rich snippets
-                    for the results page. <a target="_blank" rel="noopener"
-                      href="https://moz.com/learn/seo/schema-structured-data">Rich
-                      Snippets</a> don't directly affect your ranking but make the results page much more appealing and
-                    feature rich to possible visitors.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Facebook &amp; Twitter Cards Created</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Facebook's <a target="_blank" rel="noopener"
-                      href="https://developers.facebook.com/docs/sharing/opengraph">Open
-                      Graph</a> and Twitter's <a target="_blank" rel="noopener"
-                      href="https://dev.twitter.com/cards/overview">Cards</a> allow you to make social sharing much more
-                    appealing to people viewing the "share" on social media websites. Both
-                    <a target="_blank" rel="noopener" href="https://developers.facebook.com/tools/debug/">Facebook</a>
-                    and <a target="_blank" rel="noopener" href="https://cards-dev.twitter.com/validator">Twitter</a>
-                    have tools to preview and debug your cards.
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-          <section class="checklist">
-            <h2 class="checklist__title">Q3</h2>
-            <span class="checklist__title-border"></span>
-            <span class="checklist__percentage-border"></span>
-            <ul class="checklist-container">
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">HTTPS Set Everywhere</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-                <div class="info-container">
-                  <div class="info">HTTPS should be implemented not just on the login page as it is a prerequisite for a
-                    number of other technologies in security and performance. <a target="_blank" rel="noopener"
-                      href="https://letsencrypt.org/">Let's
-                      Encrypt</a> allows you to easily and freely create and manage a certificate. Make sure your Cipher
-                    Suite is up to date and enable OCSP stapling on your web server. Test your page using
-                    <a target="_blank" rel="noopener" href="https://www.ssllabs.com/ssltest/">SSL Labs</a>.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Security Headers Set</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Taking the time to setup simple headers on your webserver will save you down the
-                    road. <br> Test using: <a target="_blank" rel="noopener"
-                      href="https://securityheaders.io/">securityheaders.io</a>
-                    <ul>
-                      <li><a target="_blank" rel="noopener"
-                          href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">CSP</a> header to mitigate XSS
-                        and data injection attacks
-                      </li>
-                      <li><a target="_blank" rel="noopener"
-                          href="https://en.wikipedia.org/wiki/Cross-site_request_forgery">CSRF</a> token to prevent
-                        cross site request forgery.
-                      </li>
-                      <li><a target="_blank" rel="noopener"
-                          href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">X-Frame-Options</a>
-                        header to protect against click-jacking
-                      </li>
-                      <li><a target="_blank" rel="noopener"
-                          href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection">X-XSS-Protection</a>
-                        header to mitigate XSS attacks
-                      </li>
-                      <li>Use <a target="_blank" rel="noopener"
-                          href="https://blog.stackpath.com/glossary/hsts/">HSTS</a> responses to force TLS only access.
-                        Redirect all HTTP request to HTTPS on the server as backup
-                      </li>
-                      <li>Cookies should be scoped by path and domain as well as utilize <a target="_blank"
-                          rel="noopener"
-                          href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies">HttpOnly,
-                          SameSite, and Secure</a> attributes
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Sanitized &amp; Limited User Input/Parameters</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">When parsing input, remember to sanitize for data://, javascript://, and CRLF
-                    characters. Never directly inject user content into responses or <a target="_blank" rel="noopener"
-                      href="http://bobby-tables.com/">SQL
-                      statements</a>.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Password Hashes Stored in scrypt or bcrypt</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">bcrypt is much older than scrypt and has received more analysis and implementations
-                    but many suggest that scrypt is faster and stronger.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Rate Limited Slower API paths</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">In order to protect yourself from Denial-of-Service attacks, implement a rate
-                    limiter on API paths such as login or token generation.
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-          <section class="checklist">
-            <h2 class="checklist__title">Q4</h2>
-            <span class="checklist__title-border"></span>
-            <span class="checklist__percentage-border"></span>
-            <ul class="checklist-container">
-              <li class="checklist-item">
-                <input id="" type="checkbox" checked /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Contrast Analyzed</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-                <div class="info-container">
-                  <div class="info">Ensure that a <a target="_blank" rel="noopener"
-                      href="">contrast ratio
-                      of at least 4.5:1</a> exists between text and background. This improves readability for a majority
-                    of users and ensures the possibility of reading to a few. <a target="_blank" rel="noopener"
-                      href="http://accessible-colors.com/">Here</a> is more explanation and some visual indicators.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Keyboard Navigation Added</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Make sure that the browser's keyboard shortcuts are not overwritten. <a
-                      target="_blank" rel="noopener" href="https://w3c.github.io/using-aria/">Use the WAI-ARIA
-                      attributes</a> which give semantic information about the role, state, and property to
-                    assistive technologies.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Menus Analyzed</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Use semantic markup and clear styling to convey the menu element and structure that
-                    is consistent with every page. A usability tip is to ensure all pages are accessible through three
-                    or fewer clicks from the homepage. <a target="_blank" rel="noopener"
-                      href="https://www.w3.org/WAI/tutorials/menus/">Here</a> is a guide to creating accessible menus.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Non-Textual Elements Have Alt Tags</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Alt tags provide textual interpretation to visual elements. Make sure your alt tags
-                    tell the content and function of the visual, are succinct, accurate, and do not use the phrases
-                    "image of" or "graphic of".
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Forms Analyzed</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info"><a target="_blank" rel="noopener"
-                      href="http://webaim.org/techniques/forms/controls">Here</a> is a great guide for accessibility on
-                    all different form elements. Forms should be navigable using the keyboard, clear, and intuitive.
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-          <section class="checklist">
-            <h2 class="checklist__title">Content</h2>
-            <span class="checklist__title-border"></span>
-            <span class="checklist__percentage-border"></span>
-            <ul class="checklist-container">
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Checked Spelling &amp; Readability </span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-                <div class="info-container">
-                  <div class="info">Remove all placeholder text and images. Split up your text into small paragraphs
-                    with a line length of <a target="_blank" rel="noopener"
-                      href="https://baymard.com/blog/line-length-readability">50-75
-                      characters</a>. Test using <a target="_blank" rel="noopener"
-                      href="https://www.webpagefx.com/tools/read-able/">WebpageFX's
-                      Readability Test Tool</a>.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Contact Details &amp; Social Media Reviewed</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Allow easy and correct contact information so people can report bugs &amp;
-                    vulnerabilities. Limit the number of social media buttons to minimize requests and create more
-                    focus.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Links Analyzed</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">
-                    <ul>
-                      <li>Links are descriptive and appear "clickable"</li>
-                      <li>External links use the <a target="_blank" rel="noopener"
-                          href="https://developers.google.com/web/tools/lighthouse/audits/noopener">rel="noopener"</a>
-                        attribute
-                      </li>
-                      <li>Important links don't move (auto carousels or accordions)</li>
-                      <li>Links not in navigation have title attribute</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Created Favicon &amp; App Icons </span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Use a service such as <a target="_blank" rel="noopener"
-                      href="http://realfavicongenerator.net/">RealFaviconGenerator</a> to easily generate the many icons
-                    needed for various platforms. Test in development to ensure no errors.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Created Custom 404 &amp; Offline Pages </span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">
-                    Create a custom 404.html page and an offline.html page and set them up on the web server to give
-                    better feedback to the user.
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-          <section class="checklist">
-            <h2 class="checklist__title">Functionality</h2>
-            <span class="checklist__title-border"></span>
-            <span class="checklist__percentage-border"></span>
-            <ul class="checklist-container">
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Made Compatible with Browsers &amp; Platforms</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-                <div class="info-container">
-                  <div class="info">Test on the major browsers such as Chrome, Firefox, Safari, IE/Edge, and Opera.
-                    Utilize tools or libraries such as <a target="_blank" rel="noopener"
-                      href="https://modernizr.com/">Modernizr</a> to only use features that are available to the user.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Responsive Analysis Done</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">Responsive means that based on the width of the browser the CSS gives different
-                    style rules while all the resources stay the same. The most common change is a mobile drop-down
-                    menu. I use Chrome's device toolbar from within the Developer Tools as
-                    well as <a target="_blank" rel="noopener"
-                      href="https://chrome.google.com/webstore/detail/emmet-review/epejoicbhllgiimigokgjdoijnpaphdp">Emmet
-                      Re:view</a> to test page view throughout development down to around 300px.
-                  </div>
-                </div>
-              </li>
-              <li class="checklist-item">
-                <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
-                  class="checklist-item__title">Inputs are Mobile Optimized</span>
-                <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
-                  <span class="line"></span>
-                </button>
-
-                <div class="info-container">
-                  <div class="info">All relevant inputs have the <a target="_blank" rel="noopener"
-                      href="http://html5doctor.com/html5-forms-input-types/"
-                      title="Guide to html5 user input types">type</a> attribute set for a better user experience.
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
+            </section>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-hidden"></div>
         </div>
       </section>
 
@@ -2472,7 +1596,7 @@
             <div class="row y-gap-48 justify-content-between">
               <div class="col-lg-auto col-sm-12">
                 <a href="" class="footer__logo japanf text-white">
-                  BDOGE
+                  GDOGE
                 </a>
               </div>
 
@@ -2482,8 +1606,9 @@
                 </h4>
 
                 <div class="footer__content text-base text-light mt-16 sm:mt-12">
-                  <p>5% transaction tax: 3% locked forever in LEM/BNB liquidity and 2% distributed to holders proportionate to their holdings.</p>
-           
+                  <p>Every transaction is taxed 5%: 2% is distributed to holders and 3% is locked in liquidity forever
+                  </p>
+
                 </div>
               </div>
 
@@ -2493,10 +1618,10 @@
                 </h4>
 
                 <div class="footer__content text-base text-light mt-16 sm:mt-12">
-                  <div><a data-barba href="" class="button -underline">Buy Now</a></div>
-                  <div><a data-barba href="" class="button -underline mt-4">Roadmap</a></div>
-                  <div><a data-barba href="#" class="button -underline mt-4">Tokenomics</a></div>
-                  <div><a data-barba href="" class="button -underline mt-4">Ownership</a></div>
+                  <div><a data-gdoge href="" class="button -underline">Buy Now</a></div>
+                  <div><a data-gdoge href="#roadmap" class="button -underline mt-4">Roadmap</a></div>
+                  <div><a data-gdoge href="#tokenomics" class="button -underline mt-4">Tokenomics</a></div>
+                  <div><a data-gdoge href="" class="button -underline mt-4">Ownership</a></div>
                 </div>
               </div>
 
@@ -2505,10 +1630,10 @@
                   Follow us
                 </h4>
                 <div class="footer__content text-base text-light mt-16 sm:mt-12">
-                  <div><a data-barba href="" class="button -underline">Buy Now</a></div>
-                  <div><a data-barba href="" class="button -underline mt-4">Roadmap</a></div>
-                  <div><a data-barba href="#" class="button -underline mt-4">Tokenomics</a></div>
-                  <div><a data-barba href="" class="button -underline mt-4">Ownership</a></div>
+                  <div><a data-gdoge href="" class="button -underline">Buy Now</a></div>
+                  <div><a data-gdoge href="" class="button -underline mt-4">Roadmap</a></div>
+                  <div><a data-gdoge href="#" class="button -underline mt-4">Tokenomics</a></div>
+                  <div><a data-gdoge href="" class="button -underline mt-4">Ownership</a></div>
                 </div>
               </div>
             </div>
@@ -2521,8 +1646,8 @@
             <div class="row">
               <div class="col">
                 <div class="footer__copyright">
-                  <p class="text-light japanf">
-                    @ 2021, BDOGE. Made with passion by Yakuza.
+                  <p class="text-light ">
+                    @ 2021 <span class="japanf">GDOGE</span>. Made with passion!
                   </p>
                 </div>
               </div>
@@ -2539,7 +1664,7 @@
     </main>
 
   </div>
-  <!-- barba container end -->
+  <!-- gdoge container end -->
 
 
   <!-- JavaScript -->
@@ -2565,7 +1690,7 @@
       var colorFn = opts.colorFn || function (x) {
         var c = new THREE.Color();
 
-        c.setHSL(0.999, 0.60, 0.75);
+        c.setHSL(1, 0.66, 0.75);
         return c;
       };
 
@@ -3057,7 +2182,7 @@
         setTimeout(function () {
           console.log('LET THE SHOW111');
           $('canvas').css('top', '0')
-          $('canvas').css('opacity', '0.5')
+          $('canvas').css('opacity', '0.8')
         }, 8000);
       } else {
         console.log('Loading')

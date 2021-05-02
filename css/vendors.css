@@ -6549,7 +6549,7 @@ left: 50%;
       height: 100%;
       -webkit-transform: translate(0, 100%);
       transform: translate(0, 100%);
-      background: #fa212d;
+      background: #e84200;
   }
 
   .loader-box .water_wave {
@@ -6567,7 +6567,7 @@ left: 50%;
 
   .loader-box .water_wave_front {
       left: 0;
-      fill: #fa212d;
+      fill: #e84200;
       margin-bottom: -1px;
       -webkit-animation: wave-front .7s infinite linear;
       animation: wave-front .7s infinite linear;

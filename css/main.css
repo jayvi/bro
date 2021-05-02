@@ -114,7 +114,8 @@
 }
 
 :root {
-  --accent-color: #FF002E;
+  /* #FF002E; */
+  --accent-color: #e84200; 
   --bg-light-1: #f5f6f8;
   --bg-light-2: #F1F6F9;
   --bg-dark-1: #131419;
@@ -2780,7 +2781,7 @@ h6 {
 
 @media (max-width: 575px) {
   .nav__info {
-    display: none;
+    /* display: none; */
   }
 }
 

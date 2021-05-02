@@ -2446,15 +2446,15 @@ const PJAX = (function() {
 
   function init() {
 
-    if (!document.body.hasAttribute('data-barba')) return;
+    if (!document.body.hasAttribute('data-gdoge')) return;
 
-    barba.init({
+    gdoge.init({
       sync: true,
       timeout: 10000,
       prevent: ({ el }) => {
 
 				// element doesn't has attribute
-        if (!el.hasAttribute('data-barba')) return true;
+        if (!el.hasAttribute('data-gdoge')) return true;
 
 				// element is anchor
 				if (el.getAttribute('href').indexOf('#') > -1) return true;
