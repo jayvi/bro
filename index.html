@@ -829,7 +829,7 @@
                 <div class="col-md-6">
                   <div class="">
                     <h2 class="number -xs -left fw-300 text-accent js-counter-num">
-                      $0.0007480
+                     <span id="lastPriceUSD"> --- </span>
                     </h2>
                     <h3 class="text-xl fw-500 text-white mt-32">
                       PRICE
@@ -857,7 +857,7 @@
                 <div class="col-md-6">
                   <div class="">
                     <h2 class="number -xs -left fw-300 text-accent js-counter-num">
-                      $355,355
+                      <span id="lastLiquidity"> --- </span>
                     </h2>
                     <h3 class="text-xl fw-500 text-white mt-32">
                       LIQUIDITY
@@ -2246,7 +2246,43 @@
 
 
   <script>
+       function thousands_separators(num)
+            {
+                var num_parts = num.toString().split(".");
+                num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                return num_parts.join(".");
+            }
+  (function workerPrice() {
+                $.ajax({
+                    type: 'GET',
+                    crossDomain: true,
+                    dataType: 'json',
+                    url: 'https://api.gdoge.finance/api/v1/full',
+                    headers: {
+                        'Access-Control-Allow-Origin': '*'
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        $('#lastPriceUSD').html('$' + data.full_details.lastpriceUsd);
+                        $('#lastLiquidity').html('$' + thousands_separators(data.full_details.liquidityUSD));
 
+                    },
+                    error: function (jqXHR, error, errorThrown) {
+                        if (jqXHR.status && jqXHR.status == 400) {
+                            console.log(jqXHR.responseText);
+                            //setTimeout(workerPrice, 5000);
+                        } else {
+                            console.log("Something went wrong");
+
+                        }
+                    },
+                    complete: function () {
+
+                        // Schedule the next request when the current one's complete
+                        setTimeout(workerPrice, 60000);
+                    }
+                });
+            })();
   </script>
 </body>
 
