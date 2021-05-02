@@ -3245,6 +3245,9 @@ h6 {
     bottom: 1.5rem;
     right: 1.5rem;
   }
+  .menuExtra{
+    display: none !important;
+  }
 }
 
 @media (max-width: 575px) {
